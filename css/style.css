@@ -141,8 +141,8 @@
   }
 
   .black_bg_2 .bottom_title {
+    font-size: 22px;
     opacity: 1;
-    font-size: 20px;
   }
 }
 /* section_2 end */
@@ -252,10 +252,9 @@ li 대신 클래스명으로 변경
   color: white;
 }
 
-.sec_2_br{
+.sec_2_br {
   display: none;
 }
-
 
 .title_wrap_3 h4 {
   font-size: 18px;
@@ -321,12 +320,12 @@ li의 형제가 아니기 때문에 이벤트가 발생하지 않았음
 }
 
 @media screen and (max-width: 768px) {
-  .title_wrap_3 .top{
+  .title_wrap_3 .top {
     max-width: 300px;
     width: 90%;
   }
 
-  .title_wrap_3 .sec_2_br{
+  .title_wrap_3 .sec_2_br {
     display: block;
   }
 
@@ -338,7 +337,7 @@ li의 형제가 아니기 때문에 이벤트가 발생하지 않았음
     padding: 0 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    bottom: 30px;
+    bottom: 0;
     background-color: white;
   }
 
@@ -510,36 +509,34 @@ li의 형제가 아니기 때문에 이벤트가 발생하지 않았음
     margin: 0;
   }
 }
+/* section_4 end */
 
-/* section_4 end  */
-/* section_5 end */
-
-.section_6{
-  width: 100%;
+.section_6 {
+  padding: 100px;
 }
 
-.con_wrap_6{
-  margin-top: 60px;
+.con_wrap_6 {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
 
-.con_6{
+.con_6 {
   width: 32.5%;
-  background: no-repeat 
-  url(https://www.daelimbath.com/img/mo_magazine_bg01.png)
-  center / cover;
+  background: no-repeat
+    url(https://www.daelimbath.com/upload/magazine/202203041119312463.png)
+    center / cover;
   height: 700px;
-  overflow: hidden;
   border-radius: 30px;
+  overflow: hidden;
   transition: 0.5s;
 }
 
-.con_6-2{
+.con_6-2 {
   margin: 0 20px;
 }
 
-.con_title_wrap_6{
+.con_title_wrap_6 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0);
@@ -550,79 +547,66 @@ li의 형제가 아니기 때문에 이벤트가 발생하지 않았음
   flex-direction: column;
 }
 
-.con_title_wrap_6 h4{
+.con_title_wrap_6 h4 {
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
-.con_title_wrap_6 h3{
-  font-size: 30px;
+.con_title_wrap_6 h3 {
+  font-size: 40px;
   font-weight: 600;
   margin-top: 20px;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
-.line_6{
+.line_6 {
   width: 100%;
-  height: 5px;
+  height: 3px;
   background-color: white;
-  display: none;
+  margin-top: 5px;
   opacity: 0;
 }
 
-.con_6:hover .con_title_wrap_6{
+.con_6:hover .con_title_wrap_6 {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.con_6:hover .con_title_wrap_6 .line_6{
+.con_6:hover .con_title_wrap_6 .line_6 {
   opacity: 1;
 }
 
-.con_6-1:hover{
+.con_6-1:hover {
   width: 60%;
 }
 
-.con_6-2:hover{
+.con_6-2:hover {
   width: 60%;
 }
 
-.con_6-3:hover{
+.con_6-3:hover {
   width: 60%;
 }
-/* 
-.con_6-1:hover ~ .con6-2 {
-  width: 30%;
-} */
 
-@media screen and (max-width:1024px) {
-
-  .section_6{
+@media screen and (max-width: 1024px) {
+  .section_6 {
     padding: 100px 20px;
   }
 
-  .con_wrap_6{
+  .con_wrap_6 {
     flex-direction: column;
     row-gap: 35px;
   }
 
   .con_6 {
-    height: 400px;
     width: 100%;
+    height: 400px;
     margin: 0;
   }
 
-  .con_6:hover{
+  .con_6:hover {
     width: 100%;
   }
 
-  .con_title_wrap_6 h3{
+  .con_title_wrap_6 h3 {
     font-size: 26px;
   }
-
-  .title_wrap p{
-    font-size: 14px;
-    text-align: center;
-    line-height: 1.3em;
-  }
-
-  
 }
